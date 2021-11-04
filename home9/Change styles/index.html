@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Style</title>
+        <style>
+                /* This container style gives the flex appearance*/
+                .container {
+                        display: flex; /*making the div as flex*/
+                        justify-content: space-between; /*for more styling*/
+                }
+                .container > div {
+                        /*for the divs inside the outer div*/
+                        height: 400px; /*height is 400px*/
+                        width: 400px; /*width is 400px*/
+                        background-color: red; /*background colour is to be red*/
+                        text-align: center;
+                }
+                button {
+                        margin-top: 50%; /*button should appear at the center*/
+                }
+        </style>
+</head>
+<body>
+        <div class="container">
+                <!--For first div-->
+                <div id="div1">
+                        <!--Button of first div-->
+                        <button onclick="changeStyle('div1')">Change The style</button>
+                </div>
+                <!--For second div-->
+                <div id="div2">
+                        <!--Button for second div-->
+                        <button onclick="changeStyle('div2')">Change The style</button>
+                </div>
+                <!--For third div-->
+                <div id="div3">
+                        <!--Button for third div-->
+                        <button onclick="changeStyle('div3')">Change The style</button>
+                </div>
+                <script src="app.js"></script>
+        </div>
+    </body>
+    </html>
