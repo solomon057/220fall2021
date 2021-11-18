@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Color Mixed</title>
+   <style>
+    
+           /* Applying some styles for elements
+           NOTE: These styles can be modified according to need if needed */
+       
+       #buttons{
+           width: 300px;
+           margin: 10px 15%;
+           display: flex;
+           flex-direction: column;  
+           justify-content: center;
+       }
+       button{
+           margin: 10px;
+           width: 50px;
+           height: 25px;
+       }
+       #current_color{
+           height: 40px;
+           width: 70%;
+           margin: 20px auto;
+           border: 1px solid rgba(4, 73, 223, 0.993);
+           text-align: center;line-height: 2px;
+       }
+       #color_Mix{
+           height: 200px;
+           width: 70%;
+           margin: 20px auto;
+           background-color: rgb(0,0,0);
+       }
+   </style>
+</head>
+<body>
+    <!-- div for change color  -->
+   <div id="color_Mix"></div>
+   <!-- div to show current current calculated rgb color -->
+   <div id="current_color">
+       <h2>current color:RGB (<span id="rgb_value"></span>)</h2>
+   </div>
+   <!-- div for buttons -->
+   <div id="buttons">
+       <!-- including buttons inside table for better and easy formatting -->
+       <!-- NOTE: all styling can be change easily if needed -->
+       <table>
+           <tr>
+               <td>Red:</td>
+               <td><button onclick="Red_1()">+1</button></td>
+               <td><button onclick="Red_5()">+5</button></td>
+               <td><button onclick="Red_10()">+10</button></td>
+           </tr>
+           <tr>
+               <td>Green:</td>
+               <td><button onclick="Green_1()">+1</button></td>
+               <td><button onclick="Green_5()">+5</button></td>
+               <td><button onclick="Green_10()">+10</button></td>
+           </tr>
+           <tr>
+               <td>Blue:</td>
+               <td><button onclick="Blue_1()">+1</button></td>
+               <td><button onclick="Blue_5()">+5</button></td>
+               <td><button onclick="Blue_10()">+10</button></td>
+           </tr>
+       </table>
+   </div>
+   <script src="app.js"></script>
+</body>
+</html>
