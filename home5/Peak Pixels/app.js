@@ -1,5 +1,5 @@
 // function fun() created here
- function fun() {
+ function Bigger() {
     //accessing the div using id square
     var x = document.getElementById('square');
     //getting the width from the div and increasing 10% , adding px to it. 
